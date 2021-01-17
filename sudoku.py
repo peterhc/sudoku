@@ -121,9 +121,9 @@ def solve_all(grids, name='', showif=0.0):
     # When showif is None, don't display any puzzles.
 
     def time_solve(grid):
-        start = time.clock()
+        start = time.process_time()
         values = solve(grid)
-        t = time.clock() - start
+        t = time.process_time() - start
         # Display puzzles that take long enough
         # DEBUG print ('showif=', showif)
         # DEBUG print ('t=', t)
